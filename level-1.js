@@ -43,7 +43,11 @@ for(var i = 15; i <= 25; i++) {
 
 // 6. Using the same loop from the above question, only log the value of the counter variable if it is equal to 20.
 /**/ 
-
+if(i === 20) {
+    console.log(i);
+}else {
+    console.log("not equal to 20");
+}
 // 7. Create an array of two objects. Each object must have the same three properties (with different values):
 
 //one property with a string value
@@ -55,15 +59,45 @@ var pet = [
     {
        whatPet: "cat",
        numberOfAge: 3,
-       itsPet: true,
+       itsPet: true
     },
     {
-        whatPet: "dog",
+        whatPet: "car",
         numberOfAge: 6,
-        itsPet: true,
+        itsPet: false
     }
 ];
 
 for(var i = 0; i < pet.length; i++) {
     console.log(pet[i].numberOfAge);
+    console.log(pet[i].itsPet);
 }
+
+// 8. Create a function called whatIDontLike that accepts one argument. Choose a good name for the argument.
+
+//Inside the function, log the string "I don't like " together with the argument.
+
+//Call the function and pass in a value of your choice.
+
+//Example:
+//If you pass in the value "giraffes", the function should log: "I don't like giraffes".
+function whatIDontLike(spiders) {
+    console.log(spiders);
+}
+console.log("I don't like spiders ")
+
+//9. Create a function that accepts two arguments.
+
+//Inside the function, subtract the second argument from the first and console log the result.
+function someWords(theWords) {
+    console.log("hello " + theWords);
+}
+someWords("how are you?")
+
+//10. Create an empty array.
+
+//Create a function that accepts one argument.
+
+//Inside the function, add the argument to the array.
+
+//Call the function and pass in a value of any type.
