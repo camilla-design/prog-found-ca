@@ -108,5 +108,5 @@ function OneArgument(hello) {
 emptyArray = hello; 
   
 }
-OneArgument("Have a nice day, Manny!"); 
+OneArgument("Have a nice day, Manny! \u{1F47E}"); 
 console.log(emptyArray);
