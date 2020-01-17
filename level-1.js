@@ -89,10 +89,11 @@ console.log("I don't like spiders ")
 //9. Create a function that accepts two arguments.
 
 //Inside the function, subtract the second argument from the first and console log the result.
-function someWords(theWords) {
-    console.log("hello " + theWords);
+function AddTwoNumbers(number1, number2) {
+    var sum = number1 + number2;
+    console.log(sum)
 }
-someWords("how are you?")
+AddTwoNumbers(7,9);
 
 //10. Create an empty array.
 
@@ -101,3 +102,11 @@ someWords("how are you?")
 //Inside the function, add the argument to the array.
 
 //Call the function and pass in a value of any type.
+var emptyArray = []
+
+function OneArgument(hello) {
+emptyArray = hello; 
+  
+}
+OneArgument("Have a nice day, Manny!"); 
+console.log(emptyArray);
