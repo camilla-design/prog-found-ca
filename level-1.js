@@ -25,16 +25,10 @@ if(outOfStock) {
 //Loop through the array and console log each value.
 
 var numbers = [24, 36, 2, 5, 7];
-var firstNumber = numbers[0];
-console.log(firstNumber);
-var secoundNumber = numbers[1];
-console.log(secoundNumber);
-var therdNumber = numbers[2];
-console.log(therdNumber);
-var forthNumber = numbers[3];
-console.log(forthNumber);
-var lastNumber = numbers[4];
-console.log(lastNumber);
+var numbersOfNumbers = numbers.length;
+for(var i = 0; i < numbersOfNumbers; i++) {
+    console.log(numbers[i]);    
+}
 
 // 5. Create a for loop that counts from 15 to 25. Console log the value of the counter variable inside the loop.
 for(var i = 15; i <= 25; i++) {
@@ -43,11 +37,14 @@ for(var i = 15; i <= 25; i++) {
 
 // 6. Using the same loop from the above question, only log the value of the counter variable if it is equal to 20.
 /**/ 
+for(var i = 15; i <= 25; i++) {
+}
 if(i === 20) {
     console.log(i);
 }else {
     console.log("not equal to 20");
-}
+}  
+
 // 7. Create an array of two objects. Each object must have the same three properties (with different values):
 
 //one property with a string value
@@ -93,7 +90,7 @@ function AddTwoNumbers(number1, number2) {
     var sum = number1 + number2;
     console.log(sum)
 }
-AddTwoNumbers(7,9);
+AddTwoNumbers(203,902);
 
 //10. Create an empty array.
 
@@ -104,8 +101,8 @@ AddTwoNumbers(7,9);
 //Call the function and pass in a value of any type.
 var emptyArray = []
 
-function OneArgument(hello) {
-emptyArray = hello; 
+function OneArgument(frog) {
+emptyArray = frog; 
   
 }
 OneArgument("Have a nice day, Manny! \u{1F47E}"); 
